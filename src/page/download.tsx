@@ -295,9 +295,9 @@ export default function ImageConverter() {
     }
   };
 
-  const handleFormatChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setTargetFormat(event.target.value as ImageFormat);
-  };
+const handleFormatChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  setTargetFormat(event.target.value as ImageFormat);
+};
 
   const convertImage = async () => {
     if (!selectedFile) {
